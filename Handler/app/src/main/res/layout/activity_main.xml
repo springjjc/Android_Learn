@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="16sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendEmpty"
+        android:text="发送空消息"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendWhat0"
+        android:text="发送WHAT为0的消息"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendWhat1"
+        android:text="发送WHAT为1的消息"/>
+    <Button
+        android:id="@+id/delay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendDelay"
+        android:text="倒计时10s开始"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="postDelay"
+        android:onClick="postDelay"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopCycle"
+        android:text="stopCycle"/>
+</LinearLayout>
